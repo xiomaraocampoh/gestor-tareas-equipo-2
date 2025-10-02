@@ -32,7 +32,7 @@ public class GestorTarea {
         System.out.println("\nEliminando tarea con ID 1...");
         gestor.eliminar(1L);
 
-        System.out.println("\nLista final de tareas:");
+        System.out.println("\nLista final obtenida:");
         System.out.println(gestor.obtenerTodas());
     }
 
