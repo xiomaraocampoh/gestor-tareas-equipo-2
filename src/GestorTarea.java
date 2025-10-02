@@ -1,3 +1,5 @@
+import ParadigmaEstructurado.GestorTareasEstructurado;
+
 import javax.swing.*;
 
 public class GestorTarea {
@@ -10,5 +12,7 @@ public class GestorTarea {
     public static void main(String[] args) {
         GestorTarea g = new GestorTarea();
         g.Bienvenida();
+
+        GestorTareasEstructurado.iniciarGestor();
     }
 }
