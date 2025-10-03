@@ -1,7 +1,5 @@
 import javax.swing.*;
 
-import ParadigmaOOP.Controller.TareaController;
-import ParadigmaOOP.Modelo.Tarea;
 import funcional.gestor.GestorTareas;
 
 public class GestorTarea {
