@@ -1,6 +1,9 @@
 import javax.swing.*;
 
+import ParadigmaEstructurado.GestorTareasEstructurado;
+import ParadigmaOOP.Controller.TareaController;
 import funcional.gestor.GestorTareas;
+import ParadigmaOOP.Modelo.Tarea;
 
 public class GestorTarea {
 
@@ -41,7 +44,12 @@ public class GestorTarea {
     public static void main(String[] args) {
         GestorTarea g = new GestorTarea();
         g.Bienvenida();
+        //  PARADIGMA ESTRUCTURADO
+        System.out.println("\n=== TO-DO LIST - PARADIGMA ESTRUCTURADO (Java) ===\n");
+        GestorTareasEstructurado.iniciarGestor();
 
+        //  PARADIGMA OOP
+        System.out.println("\n=== TO-DO LIST - PARADIGMA OOP (Java) ===\n");
         demostrarGestionTareas();
 
         System.out.println("╔═══════════════════════════════════════════╗");
