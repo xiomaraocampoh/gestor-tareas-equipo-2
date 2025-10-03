@@ -1,6 +1,5 @@
 import javax.swing.*;
 
-import ParadigmaEstructurado.GestorTareasEstructurado;
 import funcional.gestor.GestorTareas;
 
 public class GestorTarea {
