@@ -2,6 +2,7 @@ import javax.swing.*;
 
 import ParadigmaOOP.Controller.TareaController;
 import ParadigmaOOP.Modelo.Tarea;
+
 import funcional.gestor.GestorTareas;
 
 public class GestorTarea {
@@ -15,7 +16,6 @@ public class GestorTarea {
     public static void demostrarGestionTareas() {
 
         TareaController gestor = new TareaController();
-
         System.out.println("Agregando tareas...");
         gestor.guardar(new Tarea(null, "Aprender Java", "Repasar la Programación Orientada a Objetos."));
         gestor.guardar(new Tarea(null, "Hacer la compra", "Comprar leche, pan y huevos."));
@@ -28,16 +28,12 @@ public class GestorTarea {
         Tarea nuevosDatos = new Tarea(null, "Comprar en el supermercado", "No olvidar el café.");
         gestor.actualizar(2L, nuevosDatos);
         System.out.println(gestor.obtenerTodas());
-
         System.out.println("\nEliminando tarea con ID 1...");
         gestor.eliminar(1L);
-
         System.out.println("\nLista final obtenida:");
         System.out.println(gestor.obtenerTodas());
+
     }
-
-
-
 
 
     public static void main(String[] args) {
@@ -46,9 +42,9 @@ public class GestorTarea {
 
         demostrarGestionTareas();
 
-        System.out.println("╔═══════════════════════════════════════════╗");
-        System.out.println("║  TO-DO LIST - PARADIGMA FUNCIONAL (Java)  ║");
-        System.out.println("╚═══════════════════════════════════════════╝\n");
+       System.out.println( "╔════════════════════════════════════════════╗");
+        System.out.println("║  TO-DO LIST - PARADIGMA FUNCIONAL (Java)   ║");
+        System.out.println("╚════════════════════════════════════════════╝\n");
 
         GestorTareas gestor = new GestorTareas();
 
